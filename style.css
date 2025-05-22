@@ -13,3 +13,11 @@
 body {
     background-color: var(--bg-color-primary);
 }
+
+.insertButton {
+    background-color: var(--bg-color-button-secondary);
+}
+
+.functionButton {
+    background-color: var(--bg-color-button-secondary);
+}
