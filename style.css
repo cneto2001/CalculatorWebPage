@@ -8,6 +8,7 @@
     --bg-color-primary: #010101;
     --bg-color-button-primary: #171719;
     --bg-color-button-secondary: #2d2d2f;
+    --bg-color-button-result: #318607;
 }
 
 body {
@@ -20,4 +21,8 @@ body {
 
 .functionButton {
     background-color: var(--bg-color-button-secondary);
+}
+
+#resultButton {
+    background-color: var(--bg-color-button-result);
 }
