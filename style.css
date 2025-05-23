@@ -12,11 +12,27 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorWrapper {
     background-color: var(--bg-color-primary);
 }
 
+button {
+    border: none;
+    border-radius: 50%;
+}
+
+.insertButton, .functionButton, #resultButton {
+    width: 40px;
+    height: 40px;
+}
+
 .insertButton {
-    background-color: var(--bg-color-button-secondary);
+    background-color: var(--bg-color-button-primary);
 }
 
 .functionButton {
