@@ -23,10 +23,19 @@ body {
     display: flex;
     flex-direction: column;
     
-    width: 400px;
+    width: 350px;
     height: 600px;
 
     background-color: var(--bg-color-primary);
+}
+
+.buttonSection {
+    display: grid;
+    grid-template-rows: repeat(5, 0.2fr);
+    grid-template-columns: repeat(4, 0.2fr);
+    
+    column-gap: 0;
+    row-gap: 4px;
 }
 
 button {
@@ -41,8 +50,8 @@ button {
 }
 
 .insertButton, .functionButton, #resultButton {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 
     color: #e8e8ea;
 }
