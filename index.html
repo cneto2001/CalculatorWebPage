@@ -12,7 +12,7 @@
 <body>
     <div class="calculatorWrapper">
         <div class="inputSection">
-            <input type="text">
+            <input type="text" id="input" autofocus="true">
         </div>
 
         <div class="separator">
@@ -25,43 +25,45 @@
 
             <button class="functionButton positiveFunction">( )</button>
 
-            <button class="functionButton positiveFunction">%</button>
+            <button class="functionButton positiveFunction" value="%" onclick="insertCharacter(value)">%</button>
 
-            <button class="functionButton positiveFunction">÷</button>
+            <button class="functionButton positiveFunction" value="÷" onclick="insertCharacter(value)">÷</button>
 
-            <button class="insertButton">7</button>
+            <button class="insertButton" onclick="insertCharacter(7)">7</button>
 
-            <button class="insertButton">8</button>
+            <button class="insertButton" onclick="insertCharacter(8)">8</button>
 
-            <button class="insertButton">9</button>
+            <button class="insertButton" onclick="insertCharacter(9)">9</button>
 
-            <button class="functionButton positiveFunction">x</button>
+            <button class="functionButton positiveFunction" value="x" onclick="insertCharacter(value)">x</button>
 
-            <button class="insertButton">4</button>
+            <button class="insertButton" onclick="insertCharacter(4)">4</button>
 
-            <button class="insertButton">5</button>
+            <button class="insertButton" onclick="insertCharacter(5)">5</button>
 
-            <button class="insertButton">6</button>
+            <button class="insertButton" onclick="insertCharacter(6)">6</button>
 
-            <button class="functionButton positiveFunction">─</button>
+            <button class="functionButton positiveFunction" value="─" onclick="insertCharacter(value)">─</button>
 
-            <button class="insertButton">1</button>
+            <button class="insertButton" onclick="insertCharacter(1)">1</button>
 
-            <button class="insertButton">2</button>
+            <button class="insertButton" onclick="insertCharacter(2)">2</button>
 
-            <button class="insertButton">3</button>
+            <button class="insertButton" onclick="insertCharacter(3)">3</button>
 
-            <button class="functionButton positiveFunction">+</button>
+            <button class="functionButton positiveFunction" value="+" onclick="insertCharacter(value)">+</button>
 
             <button class="insertButton">+/─</button>
 
-            <button class="insertButton">0</button>
+            <button class="insertButton" onclick="insertCharacter(0)">0</button>
 
-            <button class="insertButton">,</button>
+            <button class="insertButton" value="," onclick="insertCharacter(value)">,</button>
 
             <button id="resultButton">=</button>
         </div>
     </div>
+
+    <script src="scripts/calculatorScripts.js"></script>
 </body>
 
 </html>
