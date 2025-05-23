@@ -15,20 +15,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 100svh;
 }
 
 .calculatorWrapper {
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    height: 600px;
+
     background-color: var(--bg-color-primary);
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     border: none;
     border-radius: 50%;
+
+    cursor: pointer;
 }
 
 .insertButton, .functionButton, #resultButton {
     width: 40px;
     height: 40px;
+
+    color: #e8e8ea;
+}
+
+.insertButton:hover, .functionButton:hover {
+    background-color: #444446;
+}
+
+.insertButton:hover, .functionButton:hover, #resultButton:hover{
+    transition-duration: 0.2s;
+    filter: brightness(150%);
+}
+
+.positiveFunction {
+    color: #5aff7c;
 }
 
 .insertButton {
